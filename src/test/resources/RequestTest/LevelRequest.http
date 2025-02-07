@@ -1,0 +1,75 @@
+# curl -X POST http://localhost:8080/api/levels
+#     -H "Content-Type: application/json"
+#     -d '{"name": "Beginner"}'
+POST http://localhost:8080/api/levels
+Content-Type: application/json
+
+{
+  "name": "Beginner"
+}
+
+<> 2025-02-05T013126.200.json
+
+###
+
+# curl -X GET http://localhost:8080/api/levels/1
+GET http://localhost:8080/api/levels/1
+
+<> 2025-02-05T013127.500.json
+
+###
+
+# curl -X GET http://localhost:8080/api/levels
+GET http://localhost:8080/api/levels
+
+<> 2025-02-05T013127.200.json
+
+###
+
+# curl -X POST http://localhost:8080/api/levels
+#     -H "Content-Type: application/json"
+#     -d '{"name": "Advanced"}'
+POST http://localhost:8080/api/levels
+Content-Type: application/json
+
+{
+  "name": "Advanced"
+}
+
+<> 2025-02-05T013128.200.json
+
+###
+
+# curl -X PUT http://localhost:8080/api/levels/1
+#     -H "Content-Type: application/json"
+#     -d '{"id": 1, "name": "Advanced"}'
+PUT http://localhost:8080/api/levels/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Advanced123"
+}
+
+<> 2025-02-05T013128.500.json
+
+###
+
+# curl -X GET http://localhost:8080/api/levels
+GET http://localhost:8080/api/levels
+
+<> 2025-02-05T013129.200.json
+
+###
+
+# curl -X DELETE http://localhost:8080/api/levels/1
+DELETE http://localhost:8080/api/levels/1
+
+###
+
+# curl -X GET http://localhost:8080/api/levels
+GET http://localhost:8080/api/levels
+
+<> 2025-02-05T013130.200.json
+
+###

@@ -1,0 +1,59 @@
+# curl -X POST http://localhost:8080/api/levels
+#     -H "Content-Type: application/json"
+#     -d '{"name": "Beginner"}'
+POST http://localhost:8080/api/levels
+Content-Type: application/json
+
+{
+  "name": "Error"
+}
+
+###
+
+# curl -X POST http://localhost:8080/api/log_data
+#     -H "Content-Type: application/json"
+#     -d '{"level_name": "Error", "src": "System", "message": "Something went wrong"}'
+POST http://localhost:8080/api/log_data
+Content-Type: application/json
+
+{
+  "level_name": "Error",
+  "src": "System",
+  "message": "Something went wrong"
+}
+
+###
+
+# curl -X GET http://localhost:8080/api/log_data
+GET http://localhost:8080/api/log_data
+
+###
+
+# curl -X GET http://localhost:8080/api/log_data/1
+GET http://localhost:8080/api/log_data/1
+
+###
+
+# curl -X PUT http://localhost:8080/api/log_data/1
+#     -H "Content-Type: application/json"
+#     -d '{"id": 1, "src": "Updated System", "message": "Updated message"}'
+PUT http://localhost:8080/api/log_data/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "src": "Updated System",
+  "message": "Updated message"
+}
+
+###
+
+# curl -X DELETE http://localhost:8080/api/log_data/1
+DELETE http://localhost:8080/api/log_data/1
+
+###
+
+# curl -X GET http://localhost:8080/api/log_data
+GET http://localhost:8080/api/log_data
+
+###
